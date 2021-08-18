@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+#background{
+    height: 100vh;
+    width: 100vw;
+    background: url('img/bcg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+}
+
+#background::before{
+    position: absolute;
+    content: '';
+    background: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 80px;
+}
+
+header img{
+    width: 50px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    padding: 1rem 1.5rem;
+    transition: 0.5s;
+    font-size: 1.2em;
+}
+
+header nav a:hover{
+    background: #fff;
+    color: #000;
+}
+
+header nav a.current{
+    background: #fff;
+    color: #000;
+}
+
+main{
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+header nav a,main h1,footer a{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+main h1{
+    font-size: 4rem;
+    font-weight:500;
+    margin-bottom: 0.5rem;
+}
+
+main p{
+    font-size: 1.2em;
+}
+
+main p,main a{
+    font-family: 'Open Sans', sans-serif;
+}
+
+main a{
+    padding:1rem 1.5rem;
+    color: #000;
+    background: #fff;
+    opacity: 0.7;
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+main a:hover{
+    opacity: 1;
+}
+
+footer a{
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 3rem 2rem 0;
+}
