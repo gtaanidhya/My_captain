@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b9327e5f49.js" crossorigin="anonymous"></script>
+    <title>My Captain</title>
+
+    <style>
+        #background{
+        height: 100vh;
+        width: 100vw;
+        background: url('img/bcg.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+        position: absolute;
+        }
+
+        #background::before{
+        position: absolute;
+        content: '';
+        background: #000;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        }
+
+        .nav-pills a:hover{
+            background: #fff;
+            color: #000 !important;
+        }
+
+        .font-family1{
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+
+        .btn-light:hover{
+            opacity: 1 !important;
+        }
+
+        .chat{
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <div id="background"></div>
+
+    <header class=" mb-5 container d-flex flex-wrap justify-content-between py-3">
+        <img src="img/logo.png" alt="" width="50px">
+        <ul class="nav nav-pills">
+          <li class="nav-item "><a href="#" class="font-family1 bg-light text-dark nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item ms-2"><a href="#" class="font-family1 nav-link text-light">About</a></li>
+          <li class="nav-item ms-2"><a href="#" class="font-family1 nav-link text-light">Contact</a></li>
+        </ul>
+    </header>
+
+    <main class="text-light text-center">
+        <h1 class="display-4 pt-5 font-family1">My Captain Hotel</h1>
+        <p class="fs-5 fw-light"><i class="fas fa-map-marked-alt"></i> Chandni Chowk, Delhi, India</p>
+        <button type="button" class="btn btn-light opacity-75 mt-3">Book Now</button>
+    </main>
+
+    <a class="chat font-family1 fs-3 text-decoration-none me-5 mb-4" href="">Chat with us <i class="fas fa-comment"></i></a>
+  </body>
+</html>
